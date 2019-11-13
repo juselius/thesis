@@ -1,0 +1,39 @@
+%%
+%% Written by Jonas Juselius <jonas@iki.fi>
+%%
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{mystuff}[2004/11/08 version 1.0.]
+\RequirePackage{ifthen}
+\RequirePackage{booktabs}
+\RequirePackage{tabularx}
+\RequirePackage{color}
+
+%\newif\ifpdf
+%\ifx\pdfoutput\undefined
+%  \pdffalse % we are not running PDFLaTeX
+%\else
+%  \pdfoutput=1 % we are running PDFLaTeX
+%  \pdftrue
+%\fi
+
+\renewcommand\vec{\mathbf}
+\newcommand\V{\mathbf}
+\newcommand\MB{\mathbf}
+\newcommand\Eq[1]{Eq.~\ref{#1}}
+\newcommand\MC{\mathcal}
+\newcommand\Epsilon{\mathcal{E}}
+\newcommand\oover[1]{\frac{1}{#1}}
+\newcommand\compscale[1]{$\mathcal{O}(N^{#1})$}
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+\newcommand\bracket[1]{\rangle#1\rangle}
+%\newcommand\alert[1]{{\color{red}#1}}
+
+\heavyrulewidth=1pt
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+
+\endinput
